@@ -24,10 +24,13 @@ function show(){
 var functionVar = "I'm a block-scoped var";
 let functionLet = "I'm a block-scoped let";
 const functionConst = "I'm a block-scoped const";
+console.log(functionVar);
+globalVar = "Oh, I have been modified!"
 }
 show();
 
-console.log(functionVar); // Throws ReferenceError
-console.log(functionLet); // Throws ReferenceError
-console.log(functionConst); // Throws ReferenceError
+console.log(globalVar);
+//console.log(functionVar); // Throws ReferenceError
+//console.log(functionLet); // Throws ReferenceError
+//console.log(functionConst); // Throws ReferenceError
 
